@@ -86,9 +86,9 @@ def ReporteVentas():
     GranTotalVentasDiaConIva = 0
 
     for key, valor in DiccionarioVentas.items() :
-        diferentesCosmeticosDentroMismaVenta = len(valor)
+        Diferentes_Equipos_MismaVenta = len(valor)
         contador = 0
-        while contador < diferentesCosmeticosDentroMismaVenta:
+        while contador < Diferentes_Equipos_MismaVenta:
             fechaExtraida = valor[contador].fechaVenta # Se evitó el [:-15] en "fechaVenta"
 
             if fechaBusqueda == fechaExtraida:
